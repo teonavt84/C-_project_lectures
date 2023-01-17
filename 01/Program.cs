@@ -1,11 +1,19 @@
-﻿Console.WriteLine("")
-int num = 10;
+﻿Console.WriteLine("Введите число:");
+int num = Convert.ToInt32(Console.ReadLine());
 int i = 1;
-while(i < num)
+if (num < 0)
+    {
+        Console.WriteLine("Введенное число должно быть целым.");
+    }
+if (num == 1)
+    {
+        Console.WriteLine("У этого числа нет четных чисел.");
+    }
+while(i <= num)
 {
     if (i % 2 == 0)
     {
-        Console.WriteLine(i + ", ");
+        Console.Write(i + ", ");
     }
         i++;
 }    
